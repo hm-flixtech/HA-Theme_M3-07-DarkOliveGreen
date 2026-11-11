@@ -5,7 +5,64 @@
 
 <!--- ![beta_badge](https://img.shields.io/badge/State-Beta-orange?style=for-the-badge) -->
 <!---[![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration) -->
+# Furutorp M3 DarkOliveGreen
 
+A customized Material Design 3 theme for Home Assistant, maintained by [hm-flixtech](https://github.com/hm-flixtech) for the Furutorp project.
+
+This repository is a fork of [AmoebeLabs/HA-Theme_M3-07-DarkOliveGreen](https://github.com/AmoebeLabs/HA-Theme_M3-07-DarkOliveGreen).
+
+## Furutorp customizations
+
+The original Material 3 design, including dark and light modes, has been preserved.
+
+Four semantic color variables have been introduced for consistent status visualization across Furutorp dashboards.
+
+| Status | CSS variable | Color |
+|---|---|---|
+| Success / Active | `--furutorp-success` | `#66BB6A` |
+| Warning | `--furutorp-warning` | `#E9A34B` |
+| Error / Critical | `--furutorp-error` | `#E57373` |
+| Information | `--furutorp-info` | `#42A5F5` |
+
+### Usage
+
+Example for `custom:button-card`:
+
+```yaml
+styles:
+  icon:
+    - color: var(--furutorp-success)
+```
+
+Compatibility with Mushroom and other custom cards will be tested separately.
+
+Energy-specific colors are intentionally excluded from this shared status palette.
+
+## Version history
+
+| Version | Changes |
+|---|---|
+| **v1.0.0** | Initial Furutorp release. Added four semantic status colors and renamed the theme. |
+
+## Maintenance
+
+Furutorp-specific changes are maintained in this fork.
+
+Updates from the upstream AmoebeLabs repository will be reviewed and merged when appropriate.
+
+## Credits
+
+Original theme developed by **AmoebeLabs**.
+
+This fork is independently maintained and is not an official AmoebeLabs release.
+
+The original license and copyright notices remain applicable.
+
+---
+
+## Original project documentation
+
+The original README content continues below.
 # Material 3 Theme for Home Asistant: #07, Dark Olive Green
 
 ## What is it
